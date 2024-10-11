@@ -1,7 +1,8 @@
 name: 02 - Workflow Filtro
 
 on:
-    push: "feture/**"
+    push:
+        branches: "feature/**"
 
 jobs:
     echo:
