@@ -2,8 +2,9 @@ name: Continuous Integration - Alarmes
 
 on:
     pull_request:
+        types: [opened, reopened]
         branches:
-            - produção
+            - "produção/**"
 
 jobs:
     build:
