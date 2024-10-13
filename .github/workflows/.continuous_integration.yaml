@@ -1,0 +1,22 @@
+name: Continuous Integration - Alarmes
+
+on:
+    pull_request:
+        branches:
+            - produção
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Git Checkout
+              use: actions/checkout@v4
+
+            - name: Setup Java SDK
+              uses: actions/setup-java@v4
+              with:
+                  distribution: "temurin"
+                  java-version: "21"
+
+            - name: Unit Tests
+              run: mvn test
