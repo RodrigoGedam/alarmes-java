@@ -22,6 +22,3 @@ docker compose up --build
 ## Documentação online (OpenAPI)
 
 http://localhost:8080/swagger-ui/index.html
-
-![](/assets/images/swagger.png)
-
